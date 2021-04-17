@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Karl-afk/3-Column-Preview-Card-using-CSS-Flexbox.git
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://karl-afk.github.io/3-Column-Preview-Card-using-CSS-Flexbox/
 
 ## My process
 
