@@ -2,25 +2,28 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.wrapper {
-    min-height: 100vh;
+body{
+    margin: 10% auto;
+    max-width: 70%;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;    
+}
+h2 {
+    font-family:"Big Shoulders Display", sans-serif;
+    font-size:2.2rem;
+}
+.flex-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-family: 'Lexend Deca', sans-serif;
+    flex-direction: row;
 }
-.card-container {
-    display:inline-flex;
-    max-height: 670px;
-    max-width:920px;
-}
-.card {
-    width: 33.33333%;
-    line-height: 30px;
-    padding:40px;
+.flex-item {
+    padding: 2em;
+    line-height: 1.6;
     color:#fff;
+}
+.flex-item svg{
+    margin-top:1em;
 }
 .sedans{
     background:hsl(31, 77%, 52%);
@@ -33,19 +36,21 @@
     background:hsl(179, 100%, 13%);
     border-radius: 0 10px 10px 0;
 }
-.card a{
-    text-decoration: none;
-    background:#fff;
-    border-radius: 50px;
-    padding: 10px 20px;
+a{
+    background: #fff;
+    text-decoration: none;  
+    display: inline-block;
+    border-radius: 20px;   
 }
-.card h2, .card p{
-    margin-bottom:40px;
+.flex-item h2{
+    margin-top: 1em;
 }
-.card h2{
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 2.5rem;
-    margin-top:20px;
+.flex-item p {
+    margin-top: 1em;
+}
+.flex-item a{
+    margin-top: 3.5em;
+    padding: .5em 1.1em;
 }
 .sedans a{
     color:hsl(31, 77%, 52%);
@@ -57,28 +62,16 @@
     color:hsl(179, 100%, 13%);
 }
 a:hover{
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     color:#fff;
     background: none;
 }
-.row {
-    display: flex;
-    flex-direction: row;
-    min-width: 100%;
-}
-.attribution {font-size: 11px; text-align: center;}
+
+.attribution {font-size: 11px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 @media (max-width:770px) {
-    .attribution {position: fixed; top: 0; left: 33%; right: 33%;}
-    .card-container {
+    .flex-container{
         flex-direction: column;
-        max-width: 400px;
-        margin-left:10%;
-        margin-right:10%;
-        margin-bottom: 10%;
-    }
-    .card {
-        width: 100%;
     }
     .sedans {
         border-radius: 10px 10px 0 0;
@@ -86,8 +79,4 @@ a:hover{
     .luxury {
         border-radius: 0 0 10px 10px;
     }
-    .row {
-        display:flex;
-    }
-    .attribution {display:inline; position: absolute;}
 }
